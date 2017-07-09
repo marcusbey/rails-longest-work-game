@@ -1,0 +1,32 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.game-container {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+}
+.grid-container{
+
+}
+.letter {
+  padding: 5px;
+  height: 30px;
+  width: 30px;
+}
+.grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+

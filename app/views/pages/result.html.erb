@@ -1,0 +1,19 @@
+<div class="game-container">
+  <div class="grid-container">
+    <h2>Here is you grid</h2>
+    <div class="grid">
+      <% @grid.each do |letter| %>
+      <div class="letter"><%=letter%></div>
+      <%end%>
+    </div>
+  </div>
+  <h1>Your turn</h1>
+  <div class="payer">
+    <form action="answer" method="get">
+      <input type="hidden" value= "">
+      <input type="text" name="word" placeholder="your turn">
+      <input type="submit" value= "Go!">
+    </form>
+  </div>
+</div>
+
