@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="game-container">
+    <div class="grid-container">
+      <h2>Here is you grid</h2>
+      <div class="grid">
+        <% @grid.each do |letter| %>
+        <div class="letter"><%= letter %></div>
+        <%end%>
+      </div>
+    </div>
+  </div>
+  <div class="player">
+    <h2>Your turn</h2>
+    <form action="/result" method="get">
+      <label for="attempt">enter a word:&nbsp;</label>
+      <input class= "for_input "type="text" id="attempt" name="attempt" placeholder="apple">
+      <input type="hidden" name="grid" value="<%= @grid %>">
+      <input type="hidden" name="start_time" value="<%= @start_time %>">
+      <input class= "btn" type="submit" value="play!">
+    </form>
+  </div>
+
+  <!-- <form action="answer" method="get">
+    <input type="text" name="word" placeholder="your turn">
+    <input type="submit" value= "Go!">
+  </form> -->
+
+</div>
+
